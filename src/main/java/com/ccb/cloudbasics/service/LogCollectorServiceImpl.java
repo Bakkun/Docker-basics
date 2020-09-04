@@ -37,7 +37,7 @@ public class LogCollectorServiceImpl implements LogCollectorService {
             try {
                 Scanner reader = new Scanner(file);
                 while (reader.hasNextLine()) {
-                    logs.add(reader.nextLine() + "\n");
+                    logs.add(reader.nextLine());
                 }
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
