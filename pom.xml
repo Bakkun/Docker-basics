@@ -9,35 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ccb</groupId>
-	<artifactId>cloud-computing-basics</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Docker basics</name>
-	<description>Group project on the subject "Cloud computing basics".</description>
-
-	<properties>
-		<java.version>11</java.version>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
+	<artifactId>cloud-computing-basics-monorepo</artifactId>
+	<modules>
+		<module>server</module>
+		<module>log-reader</module>
+	</modules>
 </project>
