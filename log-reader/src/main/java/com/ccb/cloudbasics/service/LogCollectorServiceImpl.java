@@ -44,6 +44,6 @@ public class LogCollectorServiceImpl implements LogCollectorService {
             }
         }
 
-        return logs.toString();
+        return String.join("\n", logs);
     }
 }
